@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div#area {
+        width: 300px;
+        height: 300px;
+        color: white;
+        background-color: green;
+        font: normal 20pt Arial;
+        text-align: center;
+        line-height: 300px;
+    }
+</style>
+<body>
+    <div id="area">
+        .iNtejara..
+    </div>
+
+    <script>
+        var area = document.querySelector('div#area')
+        
+        area.addEventListener('mousedown', segurar)
+        area.addEventListener('mouseup', soltar)
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseout', sair)
+
+        function segurar () {
+            area.style.background = 'red'
+            area.innerHTML = 'SOME DAQUI MEU!'
+        }
+        function soltar() {
+            area.style.background = 'green'
+            area.innerHTML = '.iNtejara..'
+        }
+        function clicar() {
+            area.style.background = 'blue'
+            area.innerHTML = 'Isso seu gostoso'
+        }
+        function sair() {
+            area.style.background = 'green'
+            area.innerHTML = '.iNtejara..'
+        }
+    </script>
+</body>
+</html>
