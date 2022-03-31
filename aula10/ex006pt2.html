@@ -18,12 +18,15 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="cliar()" onmouseenter="entrar()" onmouseout="sair">
+    <div id="area">
         Interaja...
     </div>
 
     <script>
         var area = document.querySelector('div#area')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
 
         function clicar() {
             area.innerHTML = 'Clicou!'
