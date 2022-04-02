@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background-color: rgb(118, 118, 243);
+    background-image: linear-gradient(to bottom, rgb(74, 74, 157), rgb(42, 42, 93));
     font: normal 15pt Arial;
     
 }
