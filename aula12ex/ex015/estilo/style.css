@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 body {
-    background-image: linear-gradient(to bottom, rgb(74, 74, 157), rgb(42, 42, 93));
+    background-image: linear-gradient(to bottom, rgb(96, 96, 201), rgb(93, 41, 136));
     font: normal 15pt Arial;
-    
+    height: 100vh;
 }
 
 header {
